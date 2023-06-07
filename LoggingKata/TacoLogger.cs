@@ -19,9 +19,9 @@ namespace LoggingKata
             Console.WriteLine($"Warning: {log}");
         }
 
-        public void LogInfo(string log)
+        public void LogInfo(string log , Exception exception = null)
         {
-            Console.WriteLine($"Info: {log}");
+            Console.WriteLine($"Info: {log}, Exception {exception}");
         }
 
         public void LogDebug(string log)
